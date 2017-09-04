@@ -1,0 +1,30 @@
+<div class="bar bar-header">
+    <h1 class="title">话费充值</h1>
+</div>
+<ion-content class="padding">
+    <div class="list" style="margin-top:40px">
+        <label class="item item-input">
+            <i class="icon ion-android-phone-landscape placeholder-icon"></i>
+            <input type="text" placeholder="充值号码" ng-model="vm.phoneNum" maxlength="11">
+        </label>
+        <span>{{vm.info}}</span>
+    </div>
+
+
+    <div ng-repeat="money in vm.moneyInfo">
+        <div class="row">
+            <div class="col col-33" ng-repeat="mon in money">
+                <button class="button button-outline button-positive button-block" ng-click="vm.submit(mon.price)" disabled>
+                    <h3>{{mon.price}}</h3>
+                    <h6>售价:{{mon.nowPrice}}元</h6>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;margin-top: 150px"> <i class="ion-ios-list placeholder-icon "></i>
+        <div ng-click="vm.histor()">充值记录</div>
+    </div>
+</ion-content>
+
+

@@ -1,0 +1,26 @@
+<div class="bar bar-header" >
+  <i class="ion-android-arrow-back placeholder-icon" style="font-size: 20px" ng-click="vm.gohome()"></i>
+  <span style="text-align: center;margin:auto">充值记录</span>
+</div>
+<ion-content class="padding has-header">
+    <div class="list">
+        <h1 style="text-align: center;color: #0a9dc7">{{vm.info}}</h1>
+        <div class="item" ng-repeat="historys in vm.historys">
+              <span>
+          手机号 ：{{historys.phoneNum}}
+        </span><br>
+        <span>
+          充&nbsp;&nbsp;&nbsp;&nbsp;值：{{historys.money}}
+        </span><br>
+            <span style="float: right;color: #999;font-size: 4px;">时间：{{historys.time}}</span>
+        </div>
+    </div>
+</ion-content>
+
+
+
+
+
+
+
+
