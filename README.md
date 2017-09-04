@@ -13,8 +13,9 @@ ionic是一个轻量的手机UI库，具有速度快，界面现代化、美观�
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+1：npm install
 
-在编辑器（我用的是WebStorm）中打开ionic/www/index.html文件。
+2：将项目重新命名为ionic
+
+3：在编辑器（我用的是WebStorm）中打开ionic/www/index.html文件。
 ```
